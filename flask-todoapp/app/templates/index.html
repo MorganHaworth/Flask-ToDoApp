@@ -1,0 +1,11 @@
+{% extends "outline.html" %}
+
+{% block content %}
+    {% for item in items %}
+    <div>
+        <p id="item">
+            {{ item.item }} is <b>{{ item.completed }}</b>
+        </p>
+    </div>
+    {% endfor %}
+{% endblock %}

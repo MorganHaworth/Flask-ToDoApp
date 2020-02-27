@@ -1,0 +1,41 @@
+<html>
+    <head>
+      <title>My To-Do List</title>
+      <style>
+        body {
+          margin: 0;
+          font-family: sans-serif;
+        }
+        #nav {
+          padding-left: 84px;
+          background-color: rebeccapurple;
+        }
+        #nav a {
+          display: inline-block;
+          padding: 14px 16px;
+          text-decoration: none;
+          color: white;          
+        }
+        #nav a:hover {
+          background-color: darkmagenta;
+        }
+        #content {
+          margin: 50px 100px;
+        }
+        #item {
+          padding: 14px 16px;
+          background-color: rgb(250,250,250);
+          box-shadow: 0px 1px 2px #888888;
+        }
+      </style>
+    </head>
+    <body>
+        <div id="nav">
+          <a href="/">Home</a>
+          <a href="/addItem">Add an Item</a>
+        </div>
+        <div id="content">
+          {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
